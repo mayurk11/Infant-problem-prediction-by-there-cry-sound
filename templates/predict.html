@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #004d40;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #2e7d32;
+      margin-bottom: 40px;
+    }
+
+    a {
+      display: inline-block;
+      background-color: #26a69a;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #00796b;
+    }
+
+    .emoji {
+      font-size: 2.5rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🧠 Predicted Class:</h2>
+  <h1>{{ prediction }}</h1>
+
+  <!-- You can set this dynamically on server side depending on prediction -->
+  <div class="emoji">
+    {% if prediction == 'Hungry' %}
+      🍽
+    {% elif prediction == 'Sleepy' %}
+      😴
+    {% elif prediction == 'Pain' %}
+      😢
+    {% elif prediction == 'Discomfort' %}
+      😖
+    {% elif prediction == 'Happy' %}
+      😊
+    {% else %}
+      🤔
+    {% endif %}
+  </div>
+
+  <br><br>
+  <a href="/chatbot">💬 Get Suggestions</a>
+</body>
+</html>

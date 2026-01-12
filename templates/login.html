@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BabyCare Login</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffdee9, #b5fffc);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff4081;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 300px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ff80ab;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #ff4081;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e73370;
+    }
+
+    p {
+      margin-top: 20px;
+      color: #444;
+    }
+
+    a {
+      color: #ff4081;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>👶 Welcome to BabyCare</h1>
+  <form method="POST">
+    <input type="text" name="username" placeholder="👤 Username" required><br>
+    <input type="password" name="password" placeholder="🔒 Password" required><br>
+    <button type="submit">Login</button>
+  </form>
+  <p>New user? <a href="/signup">Sign up</a></p>
+</body>
+</html>
+

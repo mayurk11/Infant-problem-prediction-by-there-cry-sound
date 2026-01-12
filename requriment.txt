@@ -1,0 +1,5 @@
+Flask 
+Torch
+Torchaudio
+Torchvision
+python-dotenv

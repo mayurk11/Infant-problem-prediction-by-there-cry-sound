@@ -1,0 +1,58 @@
+sequence of running files 
+1.augument_data.py  
+2.conver_to_spectrogram.py
+3.convert_npy_to_png.py
+4. split_dataset.py
+5. dataset_of_pretrain.py
+6. model_pre_train.py
+7. train_pretrainModel.py
+8. main_pretrain_model.py
+9. evaluate_pretrain.py
+10. predict_pretrain.py
+
+
+file structure:-
+src3.1/  
+    augument_data.py
+    conver_to_spectrogram.py
+    convert_npy_to_png.py
+    split_dataset.py
+    dataset_of_pretrain.py
+    model_pre_train.py
+    train_pretrainModel.py
+    main_pretrain_model.py
+    evaluate_pretrain.py
+    predict_pretrain.py
+   
+Baby Dataset/    (copy belly_pain to belly pain )
+    belly pain/
+    burping/
+    cold_hot/
+    discomfort/
+    hungry/
+    silence/
+    tired/
+
+ models/
+      (will contain)
+
+ newVtoA/
+      (will contain)
+ 
+AUGMENTtoSPECTRO/
+     (will contain)
+
+spectrogram_png/
+    (will contain)
+
+
+data2/
+   (will contain
+   val/
+   train/)
+
+   
+test/
+    sample4.wav 
+    sample3.wav 
+    sample1.wav

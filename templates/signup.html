@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f2f2ff, #e0f7fa);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    h2 {
+      color: #5c6bc0;
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid #c5cae9;
+      border-radius: 10px;
+      font-size: 1rem;
+      background-color: #f9f9ff;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #5c6bc0;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3949ab;
+    }
+  </style>
+</head>
+<body>
+  <h2>Create BabyCare Account</h2>
+  <form method="POST">
+    <input type="text" name="username" placeholder="👶 Baby's Name" required><br>
+    <input type="password" name="password" placeholder="🔐 Choose Password" required><br>
+    <button type="submit">Sign Up</button>
+  </form>
+</body>
+</html>
